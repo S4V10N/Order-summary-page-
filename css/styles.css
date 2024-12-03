@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+:root{
+    /*  Primary */
+
+    --PALE-BLUE: hsl(225, 100%, 94%);
+    --BRIGHT-BLUE: hsl(245, 75%, 52%);
+
+    /*  Neutral */
+
+    --VERY-PALE-BLUE: hsl(225, 100%, 98%);
+    --DESATURATED-BLUE: hsl(224, 23%, 55%);
+    --DARK-BLUE: hsl(223, 47%, 23%);
+}
+body{
+    font-size: 7rem;
+    font-family: "Red Hat Display", sans-serif;
+    height: 100vh;
+    padding: 1.6rem;
+    background-color: hsla(245, 52%, 74%, 0.479);
+    display: grid;
+    place-content: center;
+}
+.card{
+    height: 57.6rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    padding-bottom: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card img{
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1.6rem 0rem;
+}
+.card-text{
+    margin: 0rem 2rem;
+}
+.card p{
+    color: var(--DARK-BLUE);
+    line-height: 1.6em;
+}
+.back{
+    height: 8rem;
+    width: 32.5rem;
+    margin: 1.8rem 1.4rem;
+    background-color: var(--VERY-PALE-BLUE);
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0rem 1.5rem;
+}
+.back img{
+    height: 5.5rem;
+    width: 5.5rem;
+}
+.back-p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 1.5rem;
+    text-align: left;
+}
+span{
+    color: var(--DARK-BLUE);
+    font-size: 1.4rem;
+}
+.text{
+    font-size: 1.6rem;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 8rem;
+}
+button{
+    height: 6rem;
+    width: 32.5rem;
+    font-size: 1.6rem;
+    background-color: var(--BRIGHT-BLUE);
+    border: 0px;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+    box-shadow: 0rem 1.4rem 1.6rem 0.4rem var(--PALE-BLUE);
+}
+h2{
+    color: var(--DESATURATED-BLUE);
+}
+.text:active,.text:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--DESATURATED-BLUE);
+}
+button:hover,button:active{
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.600);
+}
+h2:hover,h2:active{
+    cursor: pointer;
+    color: black;
+}
+@media (min-height: 600px) {
+    .card{
+        max-width: 38rem;
+        min-height: 55rem;
+    }
+}
